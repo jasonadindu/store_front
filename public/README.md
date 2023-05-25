@@ -9,14 +9,14 @@ Click [here](https://jasonadindu.github.io/store_front/) to place your order
 
 <br />
 
-![](./img/img1.png.png)
+![](./img/img1.png)
 <br>
 
-![](./img/img2.png.png)
+![](./img/img2.png)
 
 <br>
 
-![](./img/img3.png.png)
+![](./img/img3.png)
 
 <br>
 
