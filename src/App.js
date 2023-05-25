@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter , Routes, Route} from "react-router-dom"
+import NotFound from "./components/notFound";
+import Home from "./pages/home";
+import { useContext, useEffect } from "react";
+import { storeContext } from "./context";
+import Product from "./pages/product";
 
 function App() {
+  const storeCtx = useContext(storeContext);
+  const {   getProducts } = storeCtx;
+  useEffect(() => {
+      getProducts()
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={() => <Home />} />
+        <Route path="/product/:id" Component={() => <Product />} />
+        <Route path="" Component={() => <NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

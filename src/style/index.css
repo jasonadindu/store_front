@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+div.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav.navigation {
+  position: sticky;
+  top: 0;
+  background: #eee;
+  z-index: 10;
+}
+
+nav.navigation ,  footer.footer {
+  padding: 1em;
+  
+}
+
+nav.navigation div.container, footer.footer div.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.navigation div.container ul li, footer div.container ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav.navigation div.container ul li a, footer div.container ul li a {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+main.main-content {
+  padding: 2em;
+}
+main.main-content div.container div.products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  row-gap: 50px;
+}
+
+main.main-content div.container div.products-container div.product-container {
+
+}
+
+main.main-content div.container div.products-container div.product-container div.image {
+  height: 300px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+main.main-content div.container div.products-container div.product-container div.image img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+main.main-content div.container div.products-container div.product-container div.details h3{
+  margin: 10px 0;
+}
+main.main-content div.container div.products-container div.product-container div.details h4{
+  margin: 10px 0;
+}
+
+main.main-content div.container div.products-container div.product-container div.details a {
+  color: dodgerblue;
+  font-weight: bold;
+}
+main.main-content div.container div.products-container div.product-container div.details p{
+  margin: 10px 0;
+  line-height:1.3em;
+}
+
+div.showcase {
+  padding: 3em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.showcase div.product-container {
+  width: 500px;
+}
+
+div.showcase div.product-container div.image {
+  height: 450px;
+  width: 100%;
+}
+div.showcase div.product-container div.image img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+div.product-container h3 {
+  margin: 10px 0;
+}
+
+div.product-container h4 {
+  margin: 10px 0;
+}
+
+div.product-container p {
+  line-height: 1.3em;
+}
+
+footer.footer {
+  min-height: 250px;
+  background: #567;
+  color: #fff;
+}
+
+footer.footer div.container ul li a {
+  color: #fff;
+}
